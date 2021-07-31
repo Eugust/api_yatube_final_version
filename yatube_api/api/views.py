@@ -1,6 +1,7 @@
 from rest_framework import viewsets
 from rest_framework.generics import get_object_or_404
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import (IsAuthenticated,
+                                        IsAuthenticatedOrReadOnly)
 from rest_framework.pagination import LimitOffsetPagination
 
 from posts.models import Post, Group, Comment, Follow, User
@@ -12,7 +13,7 @@ from .permissions import AuthorOrNotPermission
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = [IsAuthenticated, AuthorOrNotPermission]
+    permission_classes = [IsAuthenticatedOrReadOnly, AuthorOrNotPermission]
     pagination_class = LimitOffsetPagination
 
     def perform_create(self, serializer):
@@ -22,6 +23,7 @@ class PostViewSet(viewsets.ModelViewSet):
 class GroupViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
 
 class CommentViewSet(viewsets.ModelViewSet):
