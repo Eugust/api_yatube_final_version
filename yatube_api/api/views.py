@@ -54,5 +54,5 @@ class FollowViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         user = get_object_or_404(User, username=self.request.user.username)
-        following = Follow.objects.filter(user=user)
+        following = Follow.objects.filter(user=user).all()
         return following
