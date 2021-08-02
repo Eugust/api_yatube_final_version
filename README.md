@@ -1,7 +1,7 @@
 # API for Yatube
 ## Description
-####Draft training course Yandex.Practicum
-####The project is designed to hone API programming skills on the example of a social network 
+Draft training course Yandex.Practicum.
+The project is designed to hone API programming skills on the example of a social network 
 ## Install
 Clone the repository and go to it on the command line: 
 
