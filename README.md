@@ -1,5 +1,5 @@
-# API для проекта Yatube
-## Описание
+# API for Yatube
+## Description
 Проект учебного курса Яндекс.Практикум
 Проект предназначен для оттачивания навыков программирования API на примере социальной сети
 ## Установка
@@ -44,7 +44,7 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
-## Примеры запросов
+## Examples of requests 
 Запрос GET `http://127.0.0.1:8000/api/v1/posts/`
 ```
 [
