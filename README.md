@@ -1,9 +1,9 @@
 # API for Yatube
 ## Description
-Проект учебного курса Яндекс.Практикум
-Проект предназначен для оттачивания навыков программирования API на примере социальной сети
-## Установка
-Клонировать репозиторий и перейти в него в командной строке:
+Draft training course Yandex.Practicum
+The project is designed to hone API programming skills on the example of a social network 
+## Install
+Clone the repository and go to it on the command line: 
 
 ```
 git clone https://github.com/Eugust/api_final_yatube.git
@@ -13,7 +13,7 @@ git clone https://github.com/Eugust/api_final_yatube.git
 cd kittygram
 ```
 
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment: 
 
 ```
 python3 -m venv env
@@ -23,7 +23,7 @@ python3 -m venv env
 source env/bin/activate
 ```
 
-Установить зависимости из файла requirements.txt:
+Install dependencies from file requirements.txt:
 
 ```
 python3 -m pip install --upgrade pip
@@ -33,19 +33,19 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Run migrations:
 
 ```
 python3 manage.py migrate
 ```
 
-Запустить проект:
+Run the project:
 
 ```
 python3 manage.py runserver
 ```
 ## Examples of requests 
-Запрос GET `http://127.0.0.1:8000/api/v1/posts/`
+GET `http://127.0.0.1:8000/api/v1/posts/`
 ```
 [
   {
