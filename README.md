@@ -9,10 +9,6 @@ Clone the repository and go to it on the command line:
 git clone https://github.com/Eugust/api_final_yatube.git
 ```
 
-```
-cd kittygram
-```
-
 Create and activate a virtual environment: 
 
 ```
